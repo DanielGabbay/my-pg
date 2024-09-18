@@ -1,0 +1,14 @@
+<pwa-install
+  #pwaInstall
+  manual-apple="true"
+  manual-chrome="true"
+  [name]="name"
+  (pwa-install-how-to-event)="eventHandle($event)"
+  install-description="Custom call to install text"
+></pwa-install>
+
+
+<button (click)="show()">Show PWA Install Forced</button>
+<br>
+<br>
+<button (click)="apple()">apple style Forced</button>

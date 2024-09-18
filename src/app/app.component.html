@@ -1,15 +1,18 @@
+<div class="w-full h-full flex flex-col gap-3 items-center justify-center">
+<h1 class="text-xl font-bold">PWA DEMO APP</h1>
+<button class="bg-blue-100 p-2 border border-blue-500 rounded-lg flex items-center justify-center hover:bg-blue-50">INSTALL APP</button>
+<span class="border-2 p-4 rounded-md border-blue-800 flex flex-col justify-start items-center">
+<h2 class="text-lg font-bold">
+APP Status:
+</h2>
 <div>
-  <label for="gtm-id">Enter GTM ID:</label>
-  <input id="gtm-id" [(ngModel)]="gtmId" placeholder="GTM-XXXXXX" />
-  <button (click)="loadGTM()">Load GTM</button>
-  <button (click)="clearGTM()">Clear GTM</button>
+    <section class="toolbar flex flex-col gap-2 items-center">
+        <button id="register">Register</button>
+        <button id="unregister">Unregister</button>
+      </section>
+      <output></output>
 </div>
-<hr />
-<div class="flex flex-col gap-2 w-max">
-  <h3
-  class="font-bold text-lg"
-  >Demo Actions</h3>
-  <button (click)="simulateEvent('view_product', 'Product A')">View Product A</button>
-  <button (click)="simulateEvent('add_to_cart', 'Product A')">Add Product A to Cart</button>
-  <button (click)="simulateEvent('purchase', 'Product A')">Purchase Product A</button>
+</span>
+<pwa-install-component></pwa-install-component>
 </div>
+

@@ -26,6 +26,8 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
+              "./src/assets",
+              "./src/manifest.json",
               {
                 "glob": "**/*",
                 "input": "public"
@@ -85,6 +87,9 @@
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
+              "./src/assets",
+              "./src/sw.js",
+              "./src/manifest.json",
               {
                 "glob": "**/*",
                 "input": "public"
@@ -98,5 +103,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "09f1dbdd-85be-4d46-8451-718d0b67dfab"
   }
 }
